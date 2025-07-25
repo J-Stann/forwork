@@ -1,0 +1,209 @@
+/* General body and navbar */
+body {
+    padding-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: white;
+    width: 100%;
+}
+
+.forwork-logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    white-space: nowrap;
+    display: inline-block;
+    font-family: cursive;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Layout Containers */
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-box {
+    background: #fff;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+/* Titles & Subtext */
+.form-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #222;
+}
+
+.form-subtext {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0 30px;
+}
+
+.form-subtext a,
+.form-group a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.form-subtext a:hover,
+.form-group a:hover {
+    color: #0056b3;
+}
+
+/* Error Message */
+.form-message {
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Form Styling */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.input-field {
+    padding: 12px 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 100%;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    height: 55px;
+}
+
+.input-field:hover {
+    border-color: #007bff;
+}
+
+.input-field:focus {
+    border-color: #0056b3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Icons inside input */
+.form-group i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(20%);
+    color: #777;
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.form-group .fa-envelope,
+.form-group .fa-lock {
+    left: 12px;
+}
+
+.form-group .fa-eye {
+    right: 12px;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+/* Remember Me + Forgot Password */
+.form-group.flex {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+    gap: 8px;
+}
+
+.form-group.flex a {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.form-group.flex a:hover {
+    color: #0056b3;
+}
+
+/* Custom checkbox appearance (optional) */
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #007bff;
+    cursor: pointer;
+}
+
+/* Button Styling */
+.submit-btn {
+    padding: 14px;
+    background: #333;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    background: #000;
+    transform: scale(1.02);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .nav-main {
+        display: flex;
+        justify-content: center;
+    }
+
+    .forwork-logo {
+        font-size: 35px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .form-title {
+        font-size: 22px;
+    }
+    .submit-btn {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .form-subtext {
+        font-size: 13px;
+    }
+}
+@media (max-width: 900px) {
+    .form-container {
+        margin: 0 50px;
+    }
+}

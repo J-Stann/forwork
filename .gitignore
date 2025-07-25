@@ -1,0 +1,18 @@
+# 🔐 Don't upload real DB config
+db.php
+
+# 🧪 Don't upload test files (optional)
+*.log
+
+# ⚙️ OS or editor files
+.DS_Store
+Thumbs.db
+
+# 🛠️ VS Code settings (optional)
+.vscode/
+
+# 💥 Composer and vendor files (if using PHP with composer)
+vendor/
+
+# 📦 Node.js (if using frontend packages)
+node_modules/
